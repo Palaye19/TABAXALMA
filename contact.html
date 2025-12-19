@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/propos.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle JS (avec Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="propos.html">Qui sommes nous ?</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Nous contacter</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="propos">
+            <div class="propos-content">
+            <div class="container">
+                <div class="propos-content-child">
+                    <h1>Nous contacter</h1>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="contact-container">
+
+            <form class="contact-form">
+                <div class="form-row">
+                <div class="form-group">
+                    <label>Nom</label>
+                    <input type="text" placeholder="Mendy" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Prénom</label>
+                    <input type="text" placeholder="François" required>
+                </div>
+                </div>
+
+                <div class="form-group">
+                <label>Numéro de téléphone</label>
+                <input type="tel" placeholder="+221 77 123 45 67" required>
+                </div>
+
+                <div class="form-group">
+                <label>Message</label>
+                <textarea placeholder="Décrivez brièvement votre demande" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Envoyer</button>
+            </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content1">
+                    <img src="images/Group 9.svg" alt=""> <br> <br>  
+                    <span>Tabaxalma est une agence spécialisée dans la construction de maisons sur-mesure. 
+                        Nous accompagnons nos clients à chaque étape, en garantissant qualité, sécurité et 
+                        transparence pour tous leurs projets immobiliers.
+                    </span>
+                </div>
+                <div class="footer-content2">
+                    <h5>Contact</h5>
+                    <br>
+                    <ul>
+                        <li>
+                            <img src="images/location-06.png" alt="">
+                            <span>Immeuble MSAE-N°1032 Avenue Bourguiba Dakar</span>
+                        </li>
+                        <li>
+                            <img src="images/call.png" alt="">
+                            <span>Telephone: +221 33 825 93 63</span>
+                        </li>
+                        <li>
+                            <img src="images/mail-01.png" alt="">
+                            <span>Email: contact@tabaxalma.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-content2">
+                    <h5>A propos de nous</h5>
+                    <br>
+                    <ul>
+                        <li>
+                            <a href="">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="">Qui sommes nous ?</a>
+                        </li>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="">Nous contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+            <div class="footer-bottom">
+                <div>
+                    <p>© 2025 TABAXALMA | Tous droits reservés</p>
+                </div>
+                <div class="reseaux-sociaux">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/Linkeded.svg" alt="linkeded">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/facebook.svg" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/tweeter.svg" alt="tweeter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>CGU    Cookies</p>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+        const elements = document.querySelectorAll(
+        ".propos-content-child, \
+         .contact-form, \
+         .form-group, \
+         .btn-submit, \
+         .footer-content, \
+         .footer-bottom"
+        );
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    }
+                });
+            },
+            {
+                threshold: 0.15
+            }
+        );
+
+        elements.forEach(el => {
+            el.classList.add("hidden");
+            observer.observe(el);
+        });
+
+    });
+
+    </script>
+
+</body>
+</html>

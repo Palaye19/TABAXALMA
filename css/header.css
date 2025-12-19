@@ -1,0 +1,44 @@
+.header{
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#navbarNav{
+    justify-content: flex-end;    
+
+}
+
+.nav-link{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    color: red;
+    transition: all 0.5s ease-out;
+}
+
+
+.navbar-collapse {
+    background-color: #fff; /* fond blanc pour le menu mobile */
+    z-index: 9999;
+}
+
+.navbar-nav .nav-link {
+    color: #000 !important;          /* couleur par défaut */
+    transition: color 0.3s;          /* transition douce */
+    font-size: 1rem;                  /* taille du texte comme Bootstrap */
+    font-weight: 500;                 /* garder le poids Bootstrap */
+    text-transform: none;             /* pas de majuscules forcées */
+}
+
+.navbar-nav .nav-link:hover {
+    color: red !important;       /* couleur au survol */
+    transition: all 0.5s ease-out;
+}
