@@ -655,9 +655,19 @@
     }
 }
 
-
-
 /* PARTENAIRE */
+
+@media(max-width: 768px){
+  .partenaire-content h2{
+    font-size: 28px;
+  }
+}
+
+@media(max-width: 480px){
+  .partenaire-content h2{
+    font-size: 24px;
+  }
+}
 
 .partenaire{
     padding-top: 60px;
