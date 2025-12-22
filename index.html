@@ -214,7 +214,7 @@
                             <div class="terrain-card">
                                 <img src="images/corpsEtat.svg" alt="">
                                 <div class="terrain-card-child">
-                                    <h4>Corps d’Etat secondaire</h4>
+                                    <h4>Corps d’Etat secondaires</h4>
                                     <p>La réussite d’un projet dépend aussi de la qualité des corps d’état secondaires. Notre agence sélectionne des artisans qualifiés et soutient leur professionnalisation.
                                     </p>
                                     <br>
@@ -346,7 +346,7 @@
                                         <input type="text" placeholder="Mendy" required>
                                     </div>
                                     <div>
-                                        <label for="">Prenom</label>
+                                        <label for="">Prenoms</label>
                                         <input type="text" placeholder="François" required>
                                     </div>
                                 </div>
@@ -357,7 +357,7 @@
                                     </div>
                                     <div>
                                         <label for="">Email</label>
-                                        <input type="text" placeholder="exemple@gmail.com" required>
+                                        <input type="email" placeholder="exemple@gmail.com" required>
                                     </div>
                                 </div>
                                 <div>
@@ -373,10 +373,19 @@
                                 <div>
                                     <div>
                                         <label for="">Votre budget</label>
-                                        <input type="text" placeholder="10.000.000 FCFA" required>
+                                        <input type="number" placeholder="10.000.000 FCFA" required>
                                     </div>
                                     <div>
-                                        <textarea name="" id="" placeholder="Breve description du projet"></textarea>
+                                        <label for="">Nature juridique du terrain</label>
+                                        <select name="" id="">
+                                            <option value="" selected disabled>Veuillez choisir la nature du terrain </option>
+                                            <option value="">Déliberation</option>
+                                            <option value="">Bail</option>
+                                            <option value="">Titre foncier</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <textarea name="" id="" placeholder="Brève description du projet"></textarea>
                                     </div>
                                 </div>
                                 <button>Envoyer</button>
@@ -524,53 +533,53 @@
             
             document.addEventListener("DOMContentLoaded", () => {
 
-    const form = document.querySelector(".formulaire form");
+            const form = document.querySelector(".formulaire form");
 
-    if (!form) return;
+            if (!form) return;
 
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
 
-        let isValid = true;
-        form.querySelectorAll("input, textarea").forEach(field => {
-            if (!field.value.trim()) {
-                isValid = false;
-            }
-        });
+                let isValid = true;
+                form.querySelectorAll("input, textarea").forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                    }
+                });
 
-        if (!isValid) return;
+                if (!isValid) return;
 
-        // Supprimer ancien message si existant
-        const oldMessage = document.querySelector(".message-success");
-        if (oldMessage) oldMessage.remove();
+                // Supprimer ancien message si existant
+                const oldMessage = document.querySelector(".message-success");
+                if (oldMessage) oldMessage.remove();
 
-        // Créer le message
-        const message = document.createElement("div");
-        message.className = "message-success";
-        message.innerText =
-            "Votre message a bien été envoyé ✅\n" +
-            "Il sera pris en compte et traité dans les meilleurs délais.";
+                // Créer le message
+                const message = document.createElement("div");
+                message.className = "message-success";
+                message.innerText =
+                    "Votre message a bien été envoyé ✅\n" +
+                    "Il sera pris en compte et traité dans les meilleurs délais.";
 
-        form.after(message);
+                form.after(message);
 
-        // Réinitialiser le formulaire
-        form.reset();
+                // Réinitialiser le formulaire
+                form.reset();
 
-        // ⏱️ DISPARITION APRÈS 10 SECONDES
-        setTimeout(() => {
-            message.style.opacity = "0";
-            message.style.transition = "opacity 0.5s ease";
+                // ⏱️ DISPARITION APRÈS 10 SECONDES
+                setTimeout(() => {
+                    message.style.opacity = "0";
+                    message.style.transition = "opacity 0.5s ease";
 
-            setTimeout(() => {
-                message.remove();
-            }, 500);
+                    setTimeout(() => {
+                        message.remove();
+                    }, 500);
 
-        }, 10000);
-    });
+                    }, 10000);
+                });
 
-});
+            });
 
-    </script>
+        </script>
 
     </body>
 </html>
