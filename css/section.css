@@ -747,7 +747,7 @@ form textarea {
   padding: 14px 16px;
   border-radius: 6px;
   border: none;
-  outline-color: red;
+  /* outline-color: red; */
   outline: none;
   font-size: 14px;
 
@@ -755,7 +755,7 @@ form textarea {
 form input,
 form textarea,
 form select {
-  transition: box-shadow 0.4s ease-out;
+  transition: box-shadow 0.4s ease;
 }
 
 
