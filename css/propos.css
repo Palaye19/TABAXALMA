@@ -4,11 +4,11 @@
 }
 
 .navbar-nav .nav-link {
-    color: #000 !important;          /* couleur par défaut */
-    transition: color 0.3s;          /* transition douce */
-    font-size: 1rem;                  /* taille du texte comme Bootstrap */
-    font-weight: 500;                 /* garder le poids Bootstrap */
-    text-transform: none;             /* pas de majuscules forcées */
+    color: #000 !important;
+    transition: color 0.3s;        
+    font-size: 1rem;                  
+    font-weight: 500;                 
+    text-transform: none;            
 }
 
 .navbar-nav .nav-link:hover {
@@ -55,20 +55,22 @@
     line-height: 36px;
 }
 
-small{
+.H5{
     color: #FB811B;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 36px;
+}
+
+@media(max-width: 992px){
+  .mission-content .H5{
+    font-size: 18px;
+  }
 }
 
 main{
     background-color: #F8F8F8;
 }
-
-
-
-
 
 footer{
     padding-top: 70px;

@@ -45,8 +45,9 @@
 }
 
 .propos-content p{
-  font-size: 18px;
+  font-size: 20px;
   line-height: 36px;
+  color: rgb(96, 96, 96);
 }
 @media (max-width: 992px) {
 
@@ -408,7 +409,7 @@
     margin: 0 -15px;
 }
 .avantage-slide-content {
-  margin: 0 15px;
+  /* margin: 0 15px; */
 }
 
 .avantage h2{

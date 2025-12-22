@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 #navbarNav{
